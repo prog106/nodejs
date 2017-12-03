@@ -1,0 +1,4 @@
+
+.icon-pause:before { content: '\f00e'; } /* '' */
+.icon-play:before { content: '\f00f'; } /* '' */
+.icon-stop:before { content: '\f080'; } /* '' */

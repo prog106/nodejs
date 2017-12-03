@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://source.unsplash.com/1600x900/?nature);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+article {
+    background-color: rgba(255,255,255,0.4);
+    color: black;
+    max-width: 20rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+}
+.control {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1rem;
+}
+.control ul {
+    list-style: none;
+    padding-left: 0;
+}
+.control li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.control a {
+    color: white;
+    text-decoration: none;
+}
+.control>* {
+    display: inline-block;
+}
+.control .player {
+    position: absolute;
+    right: 1rem;
+}
+.control .player a {
+    font-size: 1rem;
+}
+.control .player a:hover {
+    color: gray;
+}
+.control .player a>span {
+    display: none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tree</title>
+        <link rel="stylesheet" href="/tree_fontello/css/fontello.css">
+        <style media="screen">
+        .tree {
+            color: #393939;
+        }
+        .tree, .tree ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .tree *:before {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        .tree label {
+            cursor: pointer;
+        }
+        .tree label:before {
+            content: '\f147';
+            font-family: fontello;
+        }
+        .tree a {
+            text-decoration: none;
+            color: #393939;
+        }
+        .tree a:before {
+            content: '\e800';
+            font-family: fontello;
+        }
+        .tree input[type="checkbox"] {
+            display: none;
+        }
+        .tree input[type="checkbox"]:checked~ul {
+            display: none;
+        }
+        .tree input[type="checkbox"]:checked+label:before {
+            content: '\f196';
+            font-family: fontello;
+        }
+        </style>
+    </head>
+    <body>
+        <ul class="tree">
+            <li>
+                <input type="checkbox" name="" id="send" value="">
+                <label for="send">Send</label>
+                <ul>
+                    <li><a href="#">node1</a></li>
+                    <li><a href="#">node2</a></li>
+                    <li>
+                        <input type="checkbox" name="" id="node3" value="">
+                        <label for="node3">node3</label>
+                        <ul>
+                            <li><a href="#">node31</a></li>
+                            <li><a href="#">node32</a></li>
+                            <li>
+                                <input type="checkbox" name="" id="node4" value="">
+                                <label for="node4">node4</label>
+                                <ul>
+                                    <li><a href="#">node41</a></li>
+                                    <li><a href="#">node42</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
